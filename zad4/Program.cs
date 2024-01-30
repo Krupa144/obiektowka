@@ -15,7 +15,7 @@ namespace zad4
             Console.WriteLine("Data po przesunięciu o tydzień w przód: " + kalendarz.GetData1());
 
             kalendarz.tył();
-            Console.WriteLine("Data po przesunięciu o tydzien" + kalendarz.GetData1());
+            Console.WriteLine("Data po przesunięciu o tydzien w tył " + kalendarz.GetData1());
         }
     }
 }

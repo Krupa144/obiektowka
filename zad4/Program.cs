@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Runtime.CompilerServices;
 
 namespace zad4
 {
@@ -6,16 +7,28 @@ namespace zad4
     {
         static void Main(string[] args)
         {
-            DateTime currentDateTime = DateTime.Now;
-            Data kalendarz = new (currentDateTime.Year, currentDateTime.Month, currentDateTime.Day);
+           Data mojaData = new Data(2024, 2, 1);
+           
+            mojaData.Przód();
+            mojaData.Przód();
+            mojaData.Przód();
+            mojaData.Przód();
+            mojaData.Przód();
+            mojaData.Dzis();
 
-            Console.WriteLine("Bieżąca data: " + kalendarz.GetData1());
+            mojaData.Tył();
+            mojaData.Tył();
+            mojaData.Tył();
+            mojaData.Tył();
+            mojaData.Tył();
+            mojaData.Tył();
+            mojaData.Tył();
+            mojaData.Tył();
+            mojaData.Tył();
+            mojaData.Tył();
+            mojaData.Tył();
+            mojaData.Dzis();
 
-            kalendarz.przód();
-            Console.WriteLine("Data po przesunięciu o tydzień w przód: " + kalendarz.GetData1());
-
-            kalendarz.tył();
-            Console.WriteLine("Data po przesunięciu o tydzien w tył " + kalendarz.GetData1());
         }
     }
 }
